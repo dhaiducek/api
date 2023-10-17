@@ -55,6 +55,7 @@ verify: verify-gocilint
 
 update-scripts:
 	hack/update-deepcopy.sh
+	$(CONTROLLER_GEN) object:headerFile="hack/empty.txt" paths="./cluster/v1alpha1"
 	hack/update-swagger-docs.sh
 	hack/update-codegen.sh
 	hack/update-v1beta1-crds.sh
