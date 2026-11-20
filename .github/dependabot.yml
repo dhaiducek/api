@@ -18,6 +18,7 @@ updates:
         update-types:
           - major
           - minor
+          - patch
       gomod:
         patterns:
           - "*"
